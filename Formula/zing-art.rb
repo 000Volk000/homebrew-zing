@@ -1,25 +1,25 @@
 class ZingArt < Formula
   desc " A TUI for physical string art placement. It takes a sequence, you pull the thread. ZING: Zing Is Not Generating."
   homepage "https://github.com/000volk000/zing"
-  version "1.0.0"
+  version "1.0.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.0/zing-art-aarch64-apple-darwin.tar.xz"
-      sha256 "01ca6a800580715d0aa67c9042d30fbe84dd3af0d5bac5110d09e39be390b8c1"
+      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-aarch64-apple-darwin.tar.xz"
+      sha256 "873648b51665b0018b0216413dd147dd3a32d4018a079993810e3da1e6227233"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.0/zing-art-x86_64-apple-darwin.tar.xz"
-      sha256 "54eacc0f91f9a769c1bd875569284939214c13b4eaf63278b32160019cb5189f"
+      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-x86_64-apple-darwin.tar.xz"
+      sha256 "9c2593f35613d200d6381e16dfc042beb62b6dc4bc338886c9bfea81e97cf7d1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.0/zing-art-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a107e9cf68c0b5fabb6b9641f4d1377c446cd338fe3c0fa7432ae174144e23c5"
+      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d3de628d3f62f4a35b5fe2d740bdabd366c2f01943a1854c47622e1a11cf1186"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.0/zing-art-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fb018d004c0d3036252150ff7c8c85ba8bdb2893f303aa5c7f9479863c69ae70"
+      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e3f9a011c5e66b9462bae3ae70135cf8ee11125fa15824a8d5d7feac38f2d858"
     end
   end
   license "MIT"
