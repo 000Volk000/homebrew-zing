@@ -1,25 +1,25 @@
 class ZingArt < Formula
   desc " A TUI for physical string art placement. It takes a sequence, you pull the thread. ZING: Zing Is Not Generating."
   homepage "https://github.com/000volk000/zing"
-  version "1.0.1"
+  version "1.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-aarch64-apple-darwin.tar.xz"
-      sha256 "873648b51665b0018b0216413dd147dd3a32d4018a079993810e3da1e6227233"
+      url "https://github.com/000volk000/zing/releases/download/v1.1.0/zing-art-aarch64-apple-darwin.tar.xz"
+      sha256 "6e18851351c9b73e0ceb0170155c37df89ec9c1242f29441332ffbca46c7d3c7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-x86_64-apple-darwin.tar.xz"
-      sha256 "9c2593f35613d200d6381e16dfc042beb62b6dc4bc338886c9bfea81e97cf7d1"
+      url "https://github.com/000volk000/zing/releases/download/v1.1.0/zing-art-x86_64-apple-darwin.tar.xz"
+      sha256 "70c8d2dfc6b9223cbec1a04a3d67761e3b31a5a3626e2456b422f0191f5b2f4c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d3de628d3f62f4a35b5fe2d740bdabd366c2f01943a1854c47622e1a11cf1186"
+      url "https://github.com/000volk000/zing/releases/download/v1.1.0/zing-art-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6c6cc595cbcf755914066920835d55af684266ac01f268a078f0e8de724c1b71"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/000volk000/zing/releases/download/v1.0.1/zing-art-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e3f9a011c5e66b9462bae3ae70135cf8ee11125fa15824a8d5d7feac38f2d858"
+      url "https://github.com/000volk000/zing/releases/download/v1.1.0/zing-art-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "66ae94bc1650fdc00b3d90d71b7d79722c74f0713c848f5a8d63009567820e24"
     end
   end
   license "MIT"
@@ -50,10 +50,10 @@ class ZingArt < Formula
   end
 
   def install
-    bin.install "zing-art" if OS.mac? && Hardware::CPU.arm?
-    bin.install "zing-art" if OS.mac? && Hardware::CPU.intel?
-    bin.install "zing-art" if OS.linux? && Hardware::CPU.arm?
-    bin.install "zing-art" if OS.linux? && Hardware::CPU.intel?
+    bin.install "zing" if OS.mac? && Hardware::CPU.arm?
+    bin.install "zing" if OS.mac? && Hardware::CPU.intel?
+    bin.install "zing" if OS.linux? && Hardware::CPU.arm?
+    bin.install "zing" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
